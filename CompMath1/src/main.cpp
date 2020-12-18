@@ -25,7 +25,7 @@ void calc(double* trace, uint32_t traceSize, double t0, double dt, double y0, do
   if(!rank){
     sy = y0;
   }
-  double* loc_trace = (double*)calloc(len, sizeof(*loc_trace));
+  double* loc_trace = (double*)calloc(l, sizeof(*loc_trace));
   if(!loc_trace){
     exit(0);
   }
